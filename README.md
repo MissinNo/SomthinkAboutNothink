@@ -1,1 +1,1 @@
-https://missinno.github.io/-ydzinono.github.io/
+https://missinno.github.io/SomthinkAboutNothink/
