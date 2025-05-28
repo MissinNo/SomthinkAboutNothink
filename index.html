@@ -38,13 +38,13 @@
       let hours = now.getHours().toString().padStart(2, '0');
       let minutes = now.getMinutes().toString().padStart(2, '0');
       let seconds = now.getSeconds().toString().padStart(2, '0');
-      document.getElementById('clock').textContent = `${hours}/${minutes}/${seconds}`;
+      document.getElementById('clock').textContent = `${hours}.${minutes}.${seconds}`;
 
       // Formatowanie daty (dd.mm.yyyy)
       let day = now.getDate().toString().padStart(2, '0');
       let month = (now.getMonth() + 1).toString().padStart(2, '0'); // miesiące od 0
       let year = now.getFullYear();
-      document.getElementById('date').textContent = `${day}.${month}.${year}`;
+      document.getElementById('date').textContent = `${day}:${month}:${year}`;
     }
 
     // Uruchomienie funkcji co sekundę
