@@ -8,7 +8,7 @@
     body {
       font-family: Arial, sans-serif;
       text-align: left;
-      margin-top: 20%;
+      margin-top: 5%;
       background-color: #f0f0f0;
     }
 
@@ -24,7 +24,7 @@
 <body style="background-color: green; color: black" onload="odliczanie();">
   
 <div id="zegar"></div>
-     <div id="clock"></div> <div id="date"></div>
+     <div id="clock" id="date"></div>
 <h1>Wesołych świąt</h1>
 
   <script>
@@ -35,7 +35,7 @@
       let hours = now.getHours().toString().padStart(2, '0');
       let minutes = now.getMinutes().toString().padStart(2, '0');
       let seconds = now.getSeconds().toString().padStart(2, '0');
-      document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+      document.getElementById('clock').textContent = `${hours}/${minutes}/${seconds}`;
 
       // Formatowanie daty (dd.mm.yyyy)
       let day = now.getDate().toString().padStart(2, '0');
