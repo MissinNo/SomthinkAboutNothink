@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            text-align: left;
             padding-top: 50px;
             background-color: #f0f0f0;
         }
@@ -33,7 +33,7 @@
             minutes = minutes < 10 ? "0" + minutes : minutes;
             seconds = seconds < 10 ? "0" + seconds : seconds;
 
-            const currentTime = `${hours}:${minutes}:${seconds}`;
+            const currentTime = `${hours}/${minutes}/${seconds}`;
             document.getElementById("clock").textContent = currentTime;
         }
 
