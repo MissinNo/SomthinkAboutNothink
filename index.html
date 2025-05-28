@@ -7,7 +7,7 @@
    <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
+      text-align: left;
       margin-top: 50px;
     }
     #clock {
@@ -23,9 +23,9 @@
     function updateClock() {
       const now = new Date();
       const options = {
-        weekday: 'long',
+        weekday: 'numeric',
         year: 'numeric',
-        month: 'long',
+        month: 'numeric',
         day: 'numeric',
         hour: '2-digit',
         minute: '2-digit',
